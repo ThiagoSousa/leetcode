@@ -39,3 +39,9 @@
 
 <p>&nbsp;</p>
 <strong>Follow-up:&nbsp;</strong>Can you come up with an algorithm that is less than <code>O(n<sup>2</sup>)</code><font face="monospace">&nbsp;</font>time complexity?
+
+<hr>
+
+<p><strong>Solution</strong></p>
+
+The strategy is to iterate through the list of numbers and subtract the current number from the target. If the result is in the set of seen numbers, we have found a pair that sums to the target. If not, we add the current number to the set of seen numbers and continue iterating.
