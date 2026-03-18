@@ -33,3 +33,9 @@
 	<li><code>0 &lt;= Node.val &lt;= 9</code></li>
 	<li>It is guaranteed that the list represents a number that does not have leading zeros.</li>
 </ul>
+
+<hr>
+
+<p><strong class="example">Solution</strong></p>
+
+Iterate through the inverse number list nodes and add each digit plus a remainder. If the sum for the digit is bigger than 10, then the remainder receives the integer part of the division by ten and the digit receives the mod. 
