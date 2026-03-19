@@ -23,3 +23,13 @@
 	<li><code>1 &lt;= s.length &lt;= 1000</code></li>
 	<li><code>s</code> consist of only digits and English letters.</li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Two solutions implemented. 
+
+In the first one, I tried a top down approach starting from the length of the stirng s and testing all possibilities of palindrome from largest to smallest. It works, but I thought it would find the solution quickly, but it is still testing all the possibilities in the worst case. And it uses a is_palindrome function, which is O(n). 
+
+In the second one, I tried to start from a central letter and scan to the left and to the right looking for the largest palindrome. It doesn't use a palindrome verification function, so it is faster. 
