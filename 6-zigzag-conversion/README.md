@@ -49,3 +49,16 @@ P     I
 	<li><code>s</code> consists of English letters (lower-case and upper-case), <code>&#39;,&#39;</code> and <code>&#39;.&#39;</code>.</li>
 	<li><code>1 &lt;= numRows &lt;= 1000</code></li>
 </ul>
+
+<hr>
+<strong>Solution:</strong>
+
+I implemented two solutions.
+
+My first naive implementation builds a matrix according to the product description and to return the text it iterates through the matrix. Complexity is O(N^2). Not the best implementation.
+
+My second implementation calculates what are the next character through the formula. I keep a variable 1 from 0 to numRows-1:
+- zig: j += (numRows-i-1)*2 so it goes all the way down and makes the zig part
+- zag = j += i*2, so it goes all the way to the top for tha zag part.
+- the exceptions are in i==0 and i==numRows-1 where we just need to go one way
+The complexity is just O(N)
