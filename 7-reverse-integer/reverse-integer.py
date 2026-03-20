@@ -1,16 +1,50 @@
 class Solution:
     def reverse(self, x: int) -> int:
-        is_negative = True if x<0 else False
-        number = [i for i in str(x).replace("-", "")]
-        for i in range(int(len(number)/2)):
-            aux = number[i]
-            number[i] = number[len(number)-i-1]
-            number[len(number)-i-1] = aux
-        number = int("".join(number))
+        str_x = str(x)
+        is_negative = True if "-" in str_x else False
         if is_negative:
-            number = number*-1
-        if number>2**31-1 or number<-2**31-1:
-            return 0
-        return number
+            str_x = str_x[1:]
+        str_x = str_x[::-1]
+        if is_negative:
+            lower_range = "2147483648"
+            if len(str_x)>len(lower_range):
+                return 0
+            elif len(str_x)<len(lower_range):
+                return int(str_x)*-1
+            else:
+                for i in range(len(str_x)):
+                    if int(str_x[i])>int(lower_range[i]):
+                        return 0
+                    elif int(str_x[i])<int(lower_range[i]):
+                        return int(str_x)*-1
+            return int(str_x)*-1
+        else:
+            upper_range = "2147483647"
+            if len(str_x)>len(upper_range):
+                return 0
+            elif len(str_x)<len(upper_range):
+                return int(str_x)
+            else:
+                for i in range(len(str_x)):
+                    if int(str_x[i])>int(upper_range[i]):
+                        return 0
+                    elif int(str_x[i])<int(upper_range[i]):
+                        return int(str_x)
+
+                return int(str_x)
+        return int(str_x)
+
+        # is_negative = True if x<0 else False
+        # number = [i for i in str(x).replace("-", "")]
+        # for i in range(int(len(number)/2)):
+        #     aux = number[i]
+        #     number[i] = number[len(number)-i-1]
+        #     number[len(number)-i-1] = aux
+        # number = int("".join(number))
+        # if is_negative:
+        #     number = number*-1
+        # if number>2**31-1 or number<-2**31-1:
+        #     return 0
+        # return number
             
         
