@@ -34,3 +34,9 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you solve it without converting the integer to a string?
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Converted Integer to String and iterate each index like a vector comparing the the 1st-nth, 2nd-(n-1)th until the middle of the vector. Complexity O(n)
