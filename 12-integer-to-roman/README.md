@@ -106,3 +106,15 @@ Note: 49 is not 1 (I) less of 50 (L) because the conversion is based on decimal 
 <ul>
 	<li><code>1 &lt;= num &lt;= 3999</code></li>
 </ul>
+
+<hr>
+<p><strong>Solution:</strong></p>
+
+Recursive solution with the following checks:
+
+
+- if num is 0, then return empty: end of the recursion
+- if first digit isn't 4 or 9, search in the symbols for the largest symbol smaller than digit and append symbol to solution and call recursively for the same number - found symbol.
+- if first digit is four, then search for the largest symbol smaller than digit and append the prior symbol and this such as IV, XL, CD. Call recursively for the same number - found symbol times four.
+- if first digit is nine, same as four routine, but matches the previous two digit.
+
