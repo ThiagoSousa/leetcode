@@ -15,16 +15,11 @@ class Solution:
                 break
             i += 1
 
-        print(num, i)
-
         if str(num)[0] not in ["4", "9"]:
-            print("\t", symbol_map[i-1][1])
             return symbol_map[i-1][1]+self.intToRoman(num-symbol_map[i-1][0])
         elif str(num)[0]=="4":
-            print("\t", symbol_map[i-1][1]+symbol_map[i][1])
             return symbol_map[i-1][1]+symbol_map[i][1]+self.intToRoman(num-symbol_map[i-1][0]*int(str(num)[0]))
         elif str(num)[0]=="9":
-            print("\t", symbol_map[i-2][1]+symbol_map[i][1])
             return symbol_map[i-2][1]+symbol_map[i][1]+self.intToRoman(num-symbol_map[i-2][0]*int(str(num)[0]))
         
 
