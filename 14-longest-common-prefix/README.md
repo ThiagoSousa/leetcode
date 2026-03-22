@@ -26,3 +26,9 @@
 	<li><code>0 &lt;= strs[i].length &lt;= 200</code></li>
 	<li><code>strs[i]</code> consists of only lowercase English letters if it is non-empty.</li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Simply look into all the vectors the first char that is different than the first string. Return all before that char.  
