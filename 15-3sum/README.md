@@ -39,3 +39,10 @@ Notice that the order of the output and the order of the triplets does not matte
 	<li><code>3 &lt;= nums.length &lt;= 3000</code></li>
 	<li><code>-10<sup>5</sup> &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Search for the three numbers. Start with a number I call pivot, then search for other two numbers bigger than pivot, on a two pointer search: left (smallest number bigger than pivot) and right(biggest number bigger than pivot). Left increases while right decreases. 
+Reduce the search space by jumping cases where the number is the same as the previous. 
