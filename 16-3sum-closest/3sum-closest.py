@@ -17,8 +17,6 @@ class Solution:
                     best = s
                     if abs(s-target) == 0:
                         return best
-                    # while left<right and nums[left] == nums[left-1]:
-                    #     left += 1
                 if s>target:
                     right -=1
                 elif s<target:
