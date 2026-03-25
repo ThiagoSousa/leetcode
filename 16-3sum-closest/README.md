@@ -29,3 +29,9 @@
 	<li><code>-1000 &lt;= nums[i] &lt;= 1000</code></li>
 	<li><code>-10<sup>4</sup> &lt;= target &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Similar to problem 15-3sum, we first sort the numbers increasingly. Secondly, for each starting number as pivot, we then look for the smallest number bigger than the pivot (left) and the largest number biggest then pivot (right), then we increase search it, increasing the left and decreasing the right if the sum is bigger or smaller than pivot. We compare the sum to the target and save the closest result. 
