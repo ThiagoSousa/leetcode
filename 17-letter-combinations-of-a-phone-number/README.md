@@ -29,4 +29,7 @@
 
 <p><strong>Solutions:</strong></p>
 
-I created a map of digits-> letters, and for each digit, I recursively call the solutions for that digit, until no digit is left, then we have a solution
+I created a map of digits-> letters, and for each digit, I recursively call the solutions for that digit, until no digit is left, then we have a solution.
+
+Complexity calculation. Stack depth is n. The possible combinations is 3^a + 4^b, where a and b represents the number of digits with 3 and 4 possibilities, respectively. 
+Then, the total complexity would be O(n*3^a*4^b) -> O(n*4^b) -> O(4^b)
