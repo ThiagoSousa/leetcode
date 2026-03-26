@@ -24,3 +24,9 @@
 	<li><code>1 &lt;= digits.length &lt;= 4</code></li>
 	<li><code>digits[i]</code> is a digit in the range <code>[&#39;2&#39;, &#39;9&#39;]</code>.</li>
 </ul>
+
+<hr>
+
+<p><strong>Solutions:</strong></p>
+
+I created a map of digits-> letters, and for each digit, I recursively call the solutions for that digit, until no digit is left, then we have a solution
