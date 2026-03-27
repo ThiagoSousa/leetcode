@@ -43,3 +43,10 @@ merging them into one sorted linked list:
 	<li><code>lists[i]</code> is sorted in <strong>ascending order</strong>.</li>
 	<li>The sum of <code>lists[i].length</code> will not exceed <code>10<sup>4</sup></code>.</li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+
+The solution that uses ListNode structure as the problem states is to keep a pointer at each list and at each iteration get the smallest value and move the pointer. However this is a bit costly, because I'm dealing with the lists. O(kn), where k mean the number of lists and n is the number of items in the lists (worst case scenario).
