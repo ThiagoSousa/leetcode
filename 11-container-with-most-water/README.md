@@ -30,3 +30,8 @@
 	<li><code>2 &lt;= n &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= height[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+<hr>
+<p><strong>Solution:</strong></p>
+
+Two pointer solution. Iterate through the left and right and calculate the volume. Store the volume if it is the largest seen. Then, move the left or right pointer which is the smallest. So, I always try to test the biggest values for the volume. Complexity: O(n)
