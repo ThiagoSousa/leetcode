@@ -8,7 +8,6 @@ class Solution:
         head = None
 
         while list1 is not None and list2 is not None:
-            print(list1.val, list2.val, head)
             if list1.val <= list2.val:
                 if head is None:
                     head = list1
@@ -26,23 +25,35 @@ class Solution:
                     node = node.next
                 list2 = list2.next
 
-        while list1 is not None:
+        if list1:
             if head is None:
                 head = list1
-                node = head
             else:
                 node.next = list1
-                node = node.next
-            list1 = list1.next
-
-        while list2 is not None:
+        
+        if list2:
             if head is None:
                 head = list2
-                node = head
             else:
                 node.next = list2
-                node = node.next
-            list2 = list2.next
+
+        # while list1 is not None:
+        #     if head is None:
+        #         head = list1
+        #         node = head
+        #     else:
+        #         node.next = list1
+        #         node = node.next
+        #     list1 = list1.next
+
+        # while list2 is not None:
+        #     if head is None:
+        #         head = list2
+        #         node = head
+        #     else:
+        #         node.next = list2
+        #         node = node.next
+        #     list2 = list2.next
 
         return head
         
