@@ -34,3 +34,10 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Could you do this in one pass?</p>
+
+<hr>
+<p><strong>Solutions:</strong></p>
+
+Iterate through the list to calculate the total number of elements, then subtract n from the total to find the position to be removed. Then, i iterate again until I find the position and assign that node.next to be the node.next.next. Complexity: O(2n) -> O(n)
+
+
