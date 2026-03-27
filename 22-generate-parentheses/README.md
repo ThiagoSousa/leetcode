@@ -14,3 +14,11 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 8</code></li>
 </ul>
+
+<hr>
+
+<p><strong>Solutions:</strong></p>
+
+Depth first search that opens parenthesis if the number of open parenthis is smaller than n, and closes if the number of closed parenthesis is smaller than the number of opens. 
+
+Complexity-wise, tt doesn't explore all the 2^2n possibilities, as it prunes invalid prefixes. So the number of outputs are given to Catalan number, thus the complexity is O(cn*n)
