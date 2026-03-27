@@ -31,3 +31,9 @@
 	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 	<li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Similar to the solution to the 3-sum, I use two pivots this time increasing the complexity by one dimensions. For each pivots i and j, I use two pointer search: left (smallest number bigger than pivot) and right (biggest number bigger than pivot). Left increases while right decreases.
