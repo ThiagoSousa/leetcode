@@ -34,3 +34,7 @@
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 	<li>Both <code>list1</code> and <code>list2</code> are sorted in <strong>non-decreasing</strong> order.</li>
 </ul>
+
+<hr>
+
+I tried to keep the original memory pointers, instead of creating new objects. Iterate through each list and check for smaller value, if so add the listnode to the next element of the list. In the end assign the remaining of the list to the end of the list. Complexity: O(n)
