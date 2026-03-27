@@ -56,3 +56,10 @@
 	<li><code>1 &lt;= s.length &lt;= 10<sup>4</sup></code></li>
 	<li><code>s</code> consists of parentheses only <code>&#39;()[]{}&#39;</code>.</li>
 </ul>
+
+<hr>
+<p><strong>Solutions:</strong></p>
+
+Using a stack to control the open parenthesis. Iterate through the chars, if it is an opening parenthesis (,[,{, then stack. If it is a close parenthesis, remove from stack and check if it is a match. If no match return False. In the end return True if stack is empty. Complexity: O(n)
+
+
