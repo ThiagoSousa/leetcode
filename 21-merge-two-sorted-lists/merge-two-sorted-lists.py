@@ -37,23 +37,5 @@ class Solution:
             else:
                 node.next = list2
 
-        # while list1 is not None:
-        #     if head is None:
-        #         head = list1
-        #         node = head
-        #     else:
-        #         node.next = list1
-        #         node = node.next
-        #     list1 = list1.next
-
-        # while list2 is not None:
-        #     if head is None:
-        #         head = list2
-        #         node = head
-        #     else:
-        #         node.next = list2
-        #         node = node.next
-        #     list2 = list2.next
-
         return head
         
