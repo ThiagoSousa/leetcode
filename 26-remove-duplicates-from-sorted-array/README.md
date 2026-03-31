@@ -49,3 +49,10 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 	<li><code>-100 &lt;= nums[i] &lt;= 100</code></li>
 	<li><code>nums</code> is sorted in <strong>non-decreasing</strong> order.</li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Keep a pointer at the last deduplicated position. Pass through the sorted array and check the current position to the pointer. If different, then I increase the pointer and change the position of the current. In this way, I'm ensuring that everything below my pointer will be deduplicated. In the end, change the array to return it up to current pointer position. Complexity: O(n)
+
