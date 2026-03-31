@@ -25,3 +25,9 @@ The first occurrence is at index 0, so we return 0.
 	<li><code>1 &lt;= haystack.length, needle.length &lt;= 10<sup>4</sup></code></li>
 	<li><code>haystack</code> and <code>needle</code> consist of only lowercase English characters.</li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Iterates through the string "haystack" checking the character that matches the first char of the string "needle". If it matches, then iterates through each char of needles checking if all of them matches. If so, return the index. Otherwise, if we iterate through all the chars of "haystack" we return -1. Complexity: O(n*m), where n and m are the length of the two strings. In the worst case scenario, I'll have to iterate both.
