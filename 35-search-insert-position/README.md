@@ -33,3 +33,9 @@
 	<li><code>nums</code> contains <strong>distinct</strong> values sorted in <strong>ascending</strong> order.</li>
 	<li><code>-10<sup>4</sup> &lt;= target &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Binary search, recursively search the middle of the array and check if it's bigger or smaller than the target, then search in the space where it is suppose to be, until it either finds the number, or you get in a situation where the search space is null, then that index is where the target is supposed to be. Complexity: O(nlogn)
