@@ -48,3 +48,7 @@ countAndSay(4) = RLE of &quot;21&quot; = &quot;1211&quot;
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you solve it iteratively?
+
+<hr>
+
+Iterative solution. Start with 1 and iterate from 2 to n at each step I execute a function called rle(sequence). Rle converts the digit-based string to rle format. Complexity O(n). 
