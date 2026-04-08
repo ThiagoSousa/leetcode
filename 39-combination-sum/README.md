@@ -39,3 +39,10 @@ These are the only two combinations.
 	<li>All elements of <code>candidates</code> are <strong>distinct</strong>.</li>
 	<li><code>1 &lt;= target &lt;= 40</code></li>
 </ul>
+
+<hr>
+
+<p><strong>Solutions:</strong></p>
+
+Backpropagation solution. Recursively seek from candidates and attach partial solutions and subtract from the target, until I find target == 0, if then, that's a solution, save it in a list. Avoid redudant solutions, by only checking elements in the candidates starting from the current position, don't look in previous positions. 
+Complexity: this is a combinatorial problem, although solved recursively, it still checks the combinations. O(n^T) in the worse case, where n is the number of candidates and T is the target.
