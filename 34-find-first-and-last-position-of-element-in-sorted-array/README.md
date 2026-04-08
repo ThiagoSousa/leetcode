@@ -24,3 +24,9 @@
 	<li><code>nums</code> is a non-decreasing array.</li>
 	<li><code>-10<sup>9</sup>&nbsp;&lt;= target&nbsp;&lt;= 10<sup>9</sup></code></li>
 </ul>
+
+<hr>
+<p><strong>Solution:</strong></p>
+
+Just a normal binary search. Once I find one element of the target, I iterate to the left and to the right looking for the start and end position of the target. If nothing is found, then just return [-1, -1] Complexity: O(logn), but it can fall back to O(n) if all elements are the target (rare case).
+
