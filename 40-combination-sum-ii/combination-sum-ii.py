@@ -10,8 +10,8 @@ class Solution:
                 return
 
             if target == 0:
-                if partial not in solutions:
-                    solutions.append(partial)
+                # if partial not in solutions:
+                solutions.append(partial)
                 return
 
             for i in range(len(candidates)):
