@@ -6,10 +6,11 @@
 class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
 
+        if head is None:
+            return head
+
         node = head
-        while node is not None:
-            if node.next is None:
-                break
+        while node.next is not None:
             if node.next.val == node.val:
                 node.next = node.next.next
             else:
