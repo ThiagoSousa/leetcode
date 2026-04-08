@@ -30,3 +30,9 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 45</code></li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Dynamic Programming solution. We create an auxiliary vector sized n+1, intialized with the solutions for n=1 -> 1 and n=2 -> 2. Then the possibilities for climbing stairs at a step i, is the sum of two previous possibilites. The result is constructed iteratively and the answer is in the final position of the vector. Complexity: O(n) 
