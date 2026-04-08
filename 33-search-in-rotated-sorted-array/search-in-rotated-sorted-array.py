@@ -15,7 +15,6 @@ class Solution:
 
         while left<right:
             middle = left+int((right-left)/2)
-            print(left, right, middle)
 
             if nums[middle]>nums[right]:
                 left = middle+1
@@ -25,13 +24,11 @@ class Solution:
         k = right
         
         nums = nums[right:]+nums[:right]
-        print(nums)
 
         left = 0
         right = len(nums)-1
         while left<right:
             middle = left+int((right-left)/2)
-            print(left, right, middle)
 
             if nums[middle] == target:
                 return (middle+k)%len(nums)
