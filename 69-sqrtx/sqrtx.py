@@ -6,5 +6,5 @@ class Solution:
             return 1
 
         for i in range(1,x+1):
-            if i**2 > x:
+            if i*i > x:
                 return i-1
