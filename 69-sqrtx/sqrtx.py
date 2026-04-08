@@ -4,16 +4,12 @@ class Solution:
             return 0
         if x == 1:
             return 1
-
-        # for i in range(1,x+1):
-        #     if i*i > x:
-        #         return i-1
+            
         left = 1
         right = x-1
         result = -1
         while left<=right:
             middle = left+int((right-left)/2)
-            print(left, right, middle)
             middle_sq = middle*middle
             if middle_sq == x:
                 return middle
