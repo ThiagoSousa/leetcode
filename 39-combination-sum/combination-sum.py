@@ -5,8 +5,6 @@ class Solution:
         
         def backsearch(candidates, target, partial):
 
-            # print(candidates, target, partial)
-
             if target == 0:
                 solutions.append(partial)
                 return
