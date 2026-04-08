@@ -29,3 +29,9 @@
 <ul>
 	<li><code>0 &lt;= x &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+<hr>
+
+<p><strong>Constraints:</strong></p>
+
+Binary search from 1-(x-1) looking for the value that when squared is less or equal to x. Complexity: O(logn)
