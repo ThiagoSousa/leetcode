@@ -27,3 +27,9 @@
 	<li><code>nums</code> is an ascending array that is possibly rotated.</li>
 	<li><code>-10<sup>4</sup> &lt;= target &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Perform two binary searches. The first is to find the index where the rotation happened, store the value k stating how many positions is the vector rotated. Then rebuild the vector in the right position. Finally perform a normal binary search in the reconstructed vector. The final result needs to be adjusted k positions mod len(nums). Complexity: O(2*logn) -> O(logn).
