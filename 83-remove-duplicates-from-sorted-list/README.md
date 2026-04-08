@@ -23,3 +23,9 @@
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 	<li>The list is guaranteed to be <strong>sorted</strong> in ascending order.</li>
 </ul>
+
+<hr>
+
+<p><strong>Solutions:</strong></p>
+
+Iterate through the linked list checking if the next element is the same as the current one, if so associate to the next, next one. Do it until the end of the linkedlist. Complexity: O(n)
