@@ -37,3 +37,9 @@
 	<li><code>1 &lt;=&nbsp;candidates[i] &lt;= 50</code></li>
 	<li><code>1 &lt;= target &lt;= 30</code></li>
 </ul>
+
+<hr>
+<p><strong>Solution:</strong></p>
+
+The given candidates aren't sorted, so they need to be sorted first. Now, we can't use the same number, but there can be repetitions, thus the logic is the same as combination-sum-i (problem 39), but when looping for the potential candidates, I do not recursively search if the number is the same as the previous one checked, avoiding unnecessary repeated checks. Complexity: although it recursively checks, it still needs to go thought all combinations, the complexity is O(2^n).
+
