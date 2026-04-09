@@ -26,4 +26,4 @@
 <hr>
 <p><strong>Solutions:</strong></p>
 
-Same as Problem 118, but I just store the last solution not a list up to nRows. Complexity: O(nRows)
+Same as Problem 118, but I just store the last solution not a list up to nRows. Complexity: O(nRows*l) where l is the number of elements in the last row. 
