@@ -26,3 +26,9 @@
 	<li>The number of nodes in the tree is in the range <code>[0, 10<sup>5</sup>]</code>.</li>
 	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Depth first search, recursively checking for leaf nodes and passing the depth up to that point. If leaf, return the depth. Check the minimal depth between the left and the right nodes. Complexity: O(n). 
