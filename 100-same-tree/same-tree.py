@@ -10,15 +10,8 @@ class Solution:
 
         def dfs(p, q):
 
-            if p is None and q is None:
-                return True
-
-            if (p is None and q is not None) or (p is not None and q is None):
-                return False
-            
-            if p.val != q.val:
-                return False
-
-            return dfs(p.left, q.left) and dfs(p.right, q.right)
+            if p is None or q is None:
+                return p == q
+            return dfs(p.left, q.left) and dfs(p.right, q.right) and p.val == q.val
 
         return dfs(p, q)
