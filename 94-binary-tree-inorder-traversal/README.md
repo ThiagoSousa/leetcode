@@ -51,3 +51,9 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Recursive solution is trivial, could you do it iteratively?
+
+<hr>
+<p><strong>Solution:</strong></p>
+
+Recursively perform a depth first search. Check left branch first, then print current node's value, then check right branch. Complexity: O(n)
+
