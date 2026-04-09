@@ -35,3 +35,9 @@
 	<li><code>-3 * 10<sup>4</sup> &lt;= nums[i] &lt;= 3 * 10<sup>4</sup></code></li>
 	<li>Each element in the array appears twice except for one element which appears only once.</li>
 </ul>
+
+<hr>
+<p><strong>Solutions:</strong></p>
+
+Makes a dictionary mapping the number of times each number appears. Then perform a pass on the keys of the dictionary checking which number happens once. Complexity: O(n+m), where m is the set of different numbers, but m<n, thus final complexity is: O(n)
+
