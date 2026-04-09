@@ -31,3 +31,9 @@
 	<li>The number of nodes in both trees is in the range <code>[0, 100]</code>.</li>
 	<li><code>-10<sup>4</sup> &lt;= Node.val &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Recursive solution. In order traversal for both trees. Recursively check the left, middle and right node for both trees together. Return false if any difference noted. Otherwise True. Complexity: O(n)
