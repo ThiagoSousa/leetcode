@@ -16,3 +16,9 @@
 <ul>
 	<li><code>1 &lt;= numRows &lt;= 30</code></li>
 </ul>
+
+<hr>
+
+<p><strong>Solutions:</strong></p>
+
+Iteratively create each triangle's rows from the previous one by summing each adjacent pair of elements in a row. Complexity O(nRows). 
