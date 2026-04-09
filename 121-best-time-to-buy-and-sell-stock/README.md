@@ -29,3 +29,9 @@ Note that buying on day 2 and selling on day 1 is not allowed because you must b
 	<li><code>1 &lt;= prices.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>0 &lt;= prices[i] &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Iterate through the prices and performs two tasks: find the lowest price and then store the maximum profit by calculating the difference between currect inspected price and the lowest price. Complexity: O(n)
