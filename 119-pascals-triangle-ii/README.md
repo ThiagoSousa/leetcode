@@ -22,3 +22,8 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Could you optimize your algorithm to use only <code>O(rowIndex)</code> extra space?</p>
+
+<hr>
+<p><strong>Solutions:</strong></p>
+
+Same as Problem 118, but I just store the last solution not a list up to nRows. Complexity: O(nRows)
