@@ -38,3 +38,10 @@ There is no root-to-leaf path with sum = 5.
 	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
 	<li><code>-1000 &lt;= targetSum &lt;= 1000</code></li>
 </ul>
+
+<hr>
+<p><strong>Solution:</strong></p>
+
+Depth first search, recursively passing the sum up to given node. If it is a leaf node check if the sum is equal to the target sum. If so, return True. Check whether the left or the right has the sum and return it. Complexity: O(n). 
+
+
