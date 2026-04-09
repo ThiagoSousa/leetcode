@@ -21,4 +21,4 @@
 
 <p><strong>Solutions:</strong></p>
 
-Iteratively create each triangle's rows from the previous one by summing each adjacent pair of elements in a row. Complexity O(nRows). 
+Iteratively create each triangle's rows from the previous one by summing each adjacent pair of elements in a row. Complexity: O(nRows*l) where l is the number of elements in the last row. 
