@@ -44,5 +44,9 @@
 	<li><code>1 &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
 
+<hr>
+
+Do normal converting to bits, by dividing by 2, and summing the values. Complexity: O(logn)
+
 <p>&nbsp;</p>
 <strong>Follow up:</strong> If this function is called many times, how would you optimize it?
