@@ -51,3 +51,11 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Recursive solution is trivial, could you do it iteratively?
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Recursively perform a depth first search. First check left branch, then check right branch, thenprint the current's node's value. Complexity: O(n)
+
+The iterative solution keeps a stack to add items, first the opposite print order: then current node, right, then left. Also keep track of which nodes were printed before. Complexity: O(n).
