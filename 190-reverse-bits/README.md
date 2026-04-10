@@ -65,3 +65,10 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> If this function is called many times, how would you optimize it?</p>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Convert the int to bits, but dividing by 2 and save the bits in a list. If the length is smaller then 32, then I put the leading zeros. The list is already built in the reverse order, then I just convert back to integer by multiplying the bit to 2^i. Complexity: O(logn) for the conversion to bit. 
+
