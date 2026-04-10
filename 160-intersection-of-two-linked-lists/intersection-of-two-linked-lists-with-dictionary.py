@@ -17,4 +17,5 @@ class Solution:
             if headB in seen:
                 return headB
             headB = headB.next
+        
         return None
