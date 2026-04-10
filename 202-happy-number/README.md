@@ -36,3 +36,8 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+Calculates the next number of the sequence and keep it in a dictionary. If number reaches 1 return True, otherwise if number is already seen in the dictionary, return False. Complexity ~ O(logn), each digit sum and calculating next is quite fast on the digits. And the number n of the sequence drops fast as the square of the digits < 100. 
