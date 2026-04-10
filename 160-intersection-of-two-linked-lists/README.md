@@ -65,3 +65,11 @@ Explanation: The two lists do not intersect, so return null.
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you write a solution that runs in <code>O(m + n)</code> time and use only <code>O(1)</code> memory?
+
+<hr>
+
+<p><strong>Solutions:</strong></p>
+
+The first solution keeps a dictionary with the seen items from the first list, then iterate through the second one and check if the item is present in the dictionary. If so, return the first node; otherwise return null. Complexity: O(m+n), but space complexity is O(n).
+
+The second solution doesn't use any extra vector, but it iterates through both lists additively A+B and B+A. The idea is that the intersection would be in the last i elements, so iterating from both ways will end up finding the same element or both will end up in null. Complexity: O(2*(m+n)) -> O(m+n), and space complexity is O(1)
