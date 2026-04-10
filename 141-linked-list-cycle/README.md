@@ -40,9 +40,3 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Can you solve it using <code>O(1)</code> (i.e. constant) memory?</p>
-
-<hr>
-
-<p><strong>Solutions:</strong></p>
-
-My first solution is to keep a dictionary of the seen nodes in the linked list, if a node is already in the dictionary then, it is a cycle. If you reach a null node, then there is no cycle. Complexity O(n)
