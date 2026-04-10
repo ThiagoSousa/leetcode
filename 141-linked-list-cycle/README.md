@@ -40,3 +40,11 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Can you solve it using <code>O(1)</code> (i.e. constant) memory?</p>
+
+<hr>
+
+<p><strong>Solutions:</strong></p>
+
+My first solution is to keep a dictionary of the seen nodes in the linked list, if a node is already in the dictionary then, it is a cycle. If you reach a null node, then there is no cycle. Complexity O(n)
+
+The second solutions uses two pointers, one fast that steps two positions and another slow one that step one node. If there is a cycle eventually they will be the same position again. Complexity O(2*n), on average there would be two passes. Space Complexity: O(1).
