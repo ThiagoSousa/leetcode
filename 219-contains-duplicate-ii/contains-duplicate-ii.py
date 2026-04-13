@@ -18,7 +18,6 @@ class Solution:
             d[nums[i]].append(i)            
         
         for number in d:
-            print(number)
             for i in range(len(d[number])):
                 for j in range(i+1, len(d[number])):
                     if abs(d[number][i]-d[number][j])<=k:
