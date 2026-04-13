@@ -40,3 +40,7 @@
 	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 </ul>
+
+<hr>
+
+Uses a dictionary to store previously seen numbers. Iterate through numbers, if number is in in the dictionary return True, otherwise add them to the dictionary. If you pass the entire list without finding duplicates return False. Complexity: O(n), Space Complexity O(n) worst case.
