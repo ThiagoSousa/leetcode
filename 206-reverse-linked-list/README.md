@@ -32,3 +32,12 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> A linked list can be reversed either iteratively or recursively. Could you implement both?</p>
+
+<hr>
+
+<p><strong>Solutions:</strong></p>
+Two solutions.
+
+The recursively solution passes the current node and its parent to a function, assigning the parent as the next node of the list. Inverting the order, until the last node. Complexity: O(n)
+
+The iterative solution does the same but through a while structure. Complexity: O(n).
