@@ -17,8 +17,6 @@ class Solution:
                 d[nums[i]] = []
             d[nums[i]].append(i)            
         
-        print(d)
-
         for number in d:
             print(number)
             for i in range(len(d[number])):
