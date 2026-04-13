@@ -30,10 +30,3 @@
 	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
 	<li><code>0 &lt;= k &lt;= 10<sup>5</sup></code></li>
 </ul>
-
-
-<hr>
-<p><strong>Solution:</strong></p>
-
-Keep a dictionary with the numbers in the window sized-k to check and slide this window removing the number on the left and checking the new number on the right whether it is in the  dictionary, if it is return True, otherwise add it to the dictionary. If you pass the entire vector and you didn't find the duplicate return False. Complexity: the pass is O(n), and to check if items are in the dictionary you have to check k values, then complexity is O(k*n)
-
