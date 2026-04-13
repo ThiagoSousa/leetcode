@@ -19,22 +19,22 @@ class Solution:
             
         # return False
 
-        d = set()
+        d = dict()
         for i in range(k+1):
             if i>=len(nums):
                 return False
             if nums[i] in d:
                 return True
-            d.add(nums[i])
+            d[nums[i]] = 0
 
         left = 0
         for i in range(k+1, len(nums)):
-            d.remove(nums[left])
+            del d[nums[left]]
             left += 1
 
             if nums[i] in d:
                 return True
-            d.add(nums[i])
+            d[nums[i]] = 0
         return False
 
 
