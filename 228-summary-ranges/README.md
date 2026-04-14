@@ -44,3 +44,9 @@
 	<li>All the values of <code>nums</code> are <strong>unique</strong>.</li>
 	<li><code>nums</code> is sorted in ascending order.</li>
 </ul>
+
+<hr>
+<p><strong>Solutions:</strong></p>
+
+Uses a two pointer to iterate through the vector of nums: left checks the start of the sequence and right checks the end of the sequence. Keep increasing right until find a non sequential number, then persist the sequence. Complexity: O(n)
+
