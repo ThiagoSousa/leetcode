@@ -25,3 +25,11 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you do it in <code>O(n)</code> time and <code>O(1)</code> space?
+
+<hr>
+
+<p><strong>Solutions:</strong></p>
+
+Two solutions. First is a recursive solution. Recursively call all to the end first and upon callback compare with the beginning of the list. It doesn't use extra space, but it does two passes on the linkedlist. Complexity: O(2*n) -> O(n).
+
+The second solution, copies the values to a auxiliary array and perform a traditional palidrome check. Require two passes on the linked list. The copy pass is O(n) and the second check is O(n/2). Final complexity: O(n+n/2) -> O(n). 
