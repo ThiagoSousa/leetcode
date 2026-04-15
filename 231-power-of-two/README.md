@@ -35,3 +35,15 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you solve it without loops/recursion?
+
+<hr>
+
+<p><strong>Constraints:</strong></p>
+
+Two implementations. The first implementaiton constantly divide the number by 2, if you reach 1, then return True. If you reach any number not evenly divisible by 2, then it is False. Complexity: O(logn)
+
+The second implementation, just check the binary of the number with an _and_ operation with the previous number. If it is zero then it is True, otherwise False. 
+The binary representation of any number power of 2 is 1 followed by zeros. Then an _and_ operation would be all zeros. 
+Example: 2^3 -> 8 -> 1000, _and_ 7 -> 0011 is 000. 
+The counter example: 6 -> 0110 _and_ 5 -> 0101 is 0100, which is not zero. 
+Complexity: O(1)
