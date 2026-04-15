@@ -38,7 +38,7 @@
 
 <hr>
 
-<p><strong>Constraints:</strong></p>
+<p><strong>Solution:</strong></p>
 
 Two implementations. The first implementaiton constantly divide the number by 2, if you reach 1, then return True. If you reach any number not evenly divisible by 2, then it is False. Complexity: O(logn)
 
