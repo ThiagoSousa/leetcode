@@ -46,3 +46,10 @@ myQueue.empty(); // return false
 
 <p>&nbsp;</p>
 <p><strong>Follow-up:</strong> Can you implement the queue such that each operation is <strong><a href="https://en.wikipedia.org/wiki/Amortized_analysis" target="_blank">amortized</a></strong> <code>O(1)</code> time complexity? In other words, performing <code>n</code> operations will take overall <code>O(n)</code> time even if one of those operations may take longer.</p>
+
+<hr>
+<p><strong>Solution:</strong></p>
+
+Use two stacks: main one and an auxiliary one. When pushing to list, add to main stack(O(1)). To peek or pop, unstack the main stack and stack it to the second one. Get the last element to be returned, and restack to the first one (O(n)). To check for empty just check the length of elements in main stack (O(1)). 
+
+
