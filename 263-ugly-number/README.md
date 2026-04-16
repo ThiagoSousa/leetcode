@@ -33,3 +33,9 @@
 <ul>
 	<li><code>-2<sup>31</sup> &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+<hr>
+<p><strong>Solutions:</strong></p>
+
+Divide for 2, 3, 5 until it is not possible anymore. If the answer is 1, then it is a ugly number, otherwise it is not. Complexity: O(logn)
+
