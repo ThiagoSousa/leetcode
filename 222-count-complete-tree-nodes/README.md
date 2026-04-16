@@ -34,3 +34,14 @@
 	<li><code>0 &lt;= Node.val &lt;= 5 * 10<sup>4</sup></code></li>
 	<li>The tree is guaranteed to be <strong>complete</strong>.</li>
 </ul>
+
+<hr>
+<p><strong>Solution:</strong></p>
+
+I first check the height of the tree, by going down always to the left most item in the tree.
+Then, i check for the nodes at the same height if they exist or not, left first, then right. If I find any nones, then stop checking and return the count of found ones.
+The result will be given by the formula: 2*(h-1)-1+count. 
+
+Total Complexity: First height check is O(logn), the second pass is O(n) in the worst case scenario, but mostly will run in less than that. 
+
+
