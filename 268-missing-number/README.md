@@ -72,3 +72,5 @@
 <p><strong>Solutions:</strong></p>
 
 Keep an auxiliary vector length 0 to n. Iterate through nums and mark on the aux vector if found. Then, iterate through aux vector and find the first non marked index. If not found return max+1. Complexity: O(2*n) -> O(n)
+
+Use sum sequence to sum all numbers from 0-n, through s(n) = (n**2+n)/2. Then sum nums and calculate difference, the answer is in the difference. Check for edgy cases when 0 or n are not present. Complexity: O(n), but no extra space used.
