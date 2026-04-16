@@ -67,3 +67,8 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Could you implement a solution using only <code>O(1)</code> extra space complexity and <code>O(n)</code> runtime complexity?</p>
+
+<hr>
+<p><strong>Solutions:</strong></p>
+
+Keep an auxiliary vector length 0 to n. Iterate through nums and mark on the aux vector if found. Then, iterate through aux vector and find the first non marked index. If not found return max+1. Complexity: O(2*n) -> O(n)
