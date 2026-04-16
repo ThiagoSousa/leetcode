@@ -46,3 +46,8 @@ myStack.empty(); // return False
 
 <p>&nbsp;</p>
 <p><strong>Follow-up:</strong> Can you implement the stack using only one queue?</p>
+
+<hr>
+
+I used two queues, I keep the first as the main storage and the second as auxiliary. 
+For push, I just queue in the first queue, complexity: O(1). For pop, I deqeue the first and queue to the second list, saving the last item for return. Then I again dequeue the second and append to the first without the last element. The function top is similar but it doesn't remove the last item from the queue. The complexity for both functions is O(n). The function empty just checks the size of the queue, also O(1).
