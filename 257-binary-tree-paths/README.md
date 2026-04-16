@@ -29,4 +29,4 @@
 
 <p><strong>Solution:</strong></p>
 
-Recursively iterate from the top to the bottom in the tree, keeping the path and check if we reach a leaft node, if so, save in the list of paths. Otherwise recursively call to the left and right passing the node and appending the path.
+Recursively iterate from the top to the bottom in the tree, keeping the path and check if we reach a leaft node, if so, save in the list of paths. Otherwise recursively call to the left and right passing the node and appending the path. Complexity: O(n).
