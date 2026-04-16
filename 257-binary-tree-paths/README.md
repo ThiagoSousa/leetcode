@@ -24,3 +24,9 @@
 	<li>The number of nodes in the tree is in the range <code>[1, 100]</code>.</li>
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Recursively iterate from the top to the bottom in the tree, keeping the path and check if we reach a leaft node, if so, save in the list of paths. Otherwise recursively call to the left and right passing the node and appending the path.
