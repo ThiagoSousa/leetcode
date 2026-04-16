@@ -28,3 +28,11 @@ Since 2 has only one digit, return it.
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Could you do it without any loop/recursion in <code>O(1)</code> runtime?</p>
+
+<hr>
+<p><strong>Solution:</strong></p>
+
+Two solutions: 
+First one sum the digits until the final response is smaller than 10. Complexity~ O(logn)
+Second solution, I calculate the mod of the num divided by 9 and that's the answer. If the mod is zero, then the sum is 9. Complexity: O(1).
+
