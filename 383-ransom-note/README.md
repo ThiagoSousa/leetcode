@@ -20,3 +20,8 @@
 	<li><code>1 &lt;= ransomNote.length, magazine.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>ransomNote</code> and <code>magazine</code> consist of lowercase English letters.</li>
 </ul>
+
+<hr>
+<p><strong>Solution:</strong></p>
+
+Uses a dictionary to keep track how many letters are available, and deduces while iterating in the magazine vector. Complexity: O(n + m)
