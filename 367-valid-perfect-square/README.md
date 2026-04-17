@@ -27,3 +27,7 @@
 <ul>
 	<li><code>1 &lt;= num &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+<hr>
+<p><strong>Solution:</strong></p>
+Check if the square root is the same as the integer square root. If so, return True, otherwise False 
