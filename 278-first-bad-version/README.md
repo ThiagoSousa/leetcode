@@ -30,3 +30,8 @@ Then 4 is the first bad version.
 <ul>
 	<li><code>1 &lt;= bad &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+<hr>
+
+Binary Search finding the middle and dividing by two. Complexity: O(logn). 
+I also tried a linear search, but it is too slow.
