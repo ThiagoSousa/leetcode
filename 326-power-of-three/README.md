@@ -36,3 +36,12 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you solve it without loops/recursion?
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+
+First solution. Keep dividing by 3 until you reach 1 and return True, or to some other number and return false. Complexity: O(log3(n))
+
+Second solution. Use the largest integer divisible by 3 in the range of possible values n can be divided by n. If so, return True otherwise False. Complexity: O(1)
