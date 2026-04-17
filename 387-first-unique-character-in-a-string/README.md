@@ -36,3 +36,9 @@
 	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>s</code> consists of only lowercase English letters.</li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+Keep a dictionary to store how many times each item happen and then recheck for the first one that happens just once in the dictionary. Complexity: O(2n) -> O(n)
+
