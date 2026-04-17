@@ -32,3 +32,9 @@
 	<li>What if <code>nums1</code>&#39;s size is small compared to <code>nums2</code>&#39;s size? Which algorithm is better?</li>
 	<li>What if elements of <code>nums2</code> are stored on disk, and the memory is limited such that you cannot load all elements into the memory at once?</li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+Use two hashmaps to keep the number of times each vector contains items. Then iterate through each hashmap's keys and append to the output n times the item happens. Complexity: O(n + m + mn) -> O(mn)
+
