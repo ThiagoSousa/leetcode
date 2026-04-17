@@ -30,3 +30,9 @@
 	<li><code>1 &lt;= s.length &lt;= 3 * 10<sup>5</sup></code></li>
 	<li><code>s</code> consist of <strong>printable ASCII</strong> characters.</li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Iterate through the string build a vector with the vowels in order. Then pass through the string again and check for vowels and get the vowels from the last positions first. Complexity: O(n) 
