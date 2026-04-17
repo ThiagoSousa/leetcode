@@ -43,3 +43,9 @@
 	<li><code>1 &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
 	<li><code>1 &lt;= pick &lt;= n</code></li>
 </ul>
+
+<hr>
+<p><strong>Solution:</strong></p>
+
+Binary Search. Keep a left and right, and at each iteration, calculate the middle between left and right. Then, I call the function and adjust left and right accordingly until finding n. Complexity: O(logn)
+
