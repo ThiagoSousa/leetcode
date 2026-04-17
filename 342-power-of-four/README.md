@@ -22,3 +22,11 @@
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Could you solve it without loops/recursion?
+
+<hr>
+
+<p><strong>Solutions:</strong></p>
+
+Two solutions. First constantly divide by 4 until we reach a number that is not divisible by four, or we reach 1, then return True. Complexity: O(log4(n))
+
+Secondly I use the same strategy of 2^n, and also check if the mod of divisible 3 is equal to 1. Complexity: O(1).
