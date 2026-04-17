@@ -10,7 +10,6 @@ class Solution:
         left = 1
         right = n
         while True:
-            print(left, right)
             middle = left+int((right-left)/2)
             result = guess(middle)
             if result == 0:
