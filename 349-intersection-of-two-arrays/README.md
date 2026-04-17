@@ -23,3 +23,8 @@
 	<li><code>1 &lt;= nums1.length, nums2.length &lt;= 1000</code></li>
 	<li><code>0 &lt;= nums1[i], nums2[i] &lt;= 1000</code></li>
 </ul>
+
+<hr>
+<p><strong>Solutions:</strong></p>
+
+Builds two sets and intersect them. 1 line of code.
