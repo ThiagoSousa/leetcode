@@ -37,3 +37,10 @@ numArray.sumRange(0, 5); // return (-2) + 0 + 3 + (-5) + 2 + (-1) = -3
 	<li><code>0 &lt;= left &lt;= right &lt; nums.length</code></li>
 	<li>At most <code>10<sup>4</sup></code> calls will be made to <code>sumRange</code>.</li>
 </ul>
+
+<hr>
+<p><strong>Solutions:</strong></p>
+
+Stores an array as an attribute and returns the sum from a part of the array. Could be better implemented to store partial sums to make it faster to calculate the sum on request. 
+
+
