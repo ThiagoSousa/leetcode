@@ -28,3 +28,9 @@
 	<li><code>t.length == s.length + 1</code></li>
 	<li><code>s</code> and <code>t</code> consist of lowercase English letters.</li>
 </ul>
+
+<hr>
+
+Solution:
+
+Makes a dictionary with the letters of the string s and how many times they appear. And then iterate through the string t and check if each char is in dictionary and reduce the count. Complexity: O(2n) -> O(n)
