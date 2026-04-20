@@ -21,3 +21,8 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 20</code></li>
 </ul>
+
+<hr>
+<p><strong>Solution:</strong></p>
+
+Iterate through the matrix following the order, cycling through: to the right, down, left and up. Then iterate the number. Stop when the number reaches n**2. Complexity: O(n**2)
