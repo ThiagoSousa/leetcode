@@ -18,3 +18,9 @@
 	<li><code>num1</code> and <code>num2</code> consist of digits only.</li>
 	<li>Both <code>num1</code> and <code>num2</code>&nbsp;do not contain any leading zero, except the number <code>0</code> itself.</li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Multiply the strings by passing through the digits of the first string through the first and multiplying each digit, then I sum the results and get rid of the leading zeros. Complexity: O(n*m) + O(n)
