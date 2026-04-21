@@ -34,3 +34,10 @@ There are two ways to reach the bottom-right corner:
 	<li><code>1 &lt;= m, n &lt;= 100</code></li>
 	<li><code>obstacleGrid[i][j]</code> is <code>0</code> or <code>1</code>.</li>
 </ul>
+
+<hr>
+<p><strong>Solution:</strong></p>
+
+Same solution as problem 62, but I assign zero to the location where the obstacles are located. Complexity: O(n*m).
+
+
