@@ -29,3 +29,10 @@
 <ul>
 	<li><code>1 &lt;= m, n &lt;= 100</code></li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Dynamic Programming. The number of unique path to a given cell in this matrix is described as the sum of the unique paths to the cell above with the number of unique paths to the cell the left: matrix[i][j] = matrix[i-1][j]+matrix[i][j-1]. That's O(n*m) complexity while iterating this matrix. 
+
