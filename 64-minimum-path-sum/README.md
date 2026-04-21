@@ -27,3 +27,9 @@
 	<li><code>1 &lt;= m, n &lt;= 200</code></li>
 	<li><code>0 &lt;= grid[i][j] &lt;= 200</code></li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+Dynamic programming. Pass through the matrix and get the min between the cell on top or on the left and sum with the current value. The result will be the bottom right corner of the matrix. Complexity: O(n*m)
