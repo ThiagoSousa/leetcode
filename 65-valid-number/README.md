@@ -55,3 +55,13 @@ For example, all the following are valid numbers: <code>&quot;2&quot;, &quot;008
 	<li><code>1 &lt;= s.length &lt;= 20</code></li>
 	<li><code>s</code> consists of only English letters (both uppercase and lowercase), digits (<code>0-9</code>), plus <code>&#39;+&#39;</code>, minus <code>&#39;-&#39;</code>, or dot <code>&#39;.&#39;</code>.</li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+The first solution I simply used Python's cast to float with a try catch. Works, but not the intention of the problem.
+The second solution I solved with regular expression, basically created a regex to identify and check.
+
+In both solutions I also hardcoded some easy to catch cases. 
+
