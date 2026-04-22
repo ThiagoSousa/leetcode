@@ -18,3 +18,9 @@
 <ul>
 	<li><code>-2<sup>31</sup> &lt;= num &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+<hr>
+
+Solution:
+
+I created a map for hexadcimals like the following: {10: "a", 11:"b", 12:"c", 13:"d", 14:"e", 15:"f"}. Then I convert from base 10 to base 16 by dividing by 16 and attaching the rest, then apply the mapping for the rest. If the number is negative the representation is inverted, so I sum the negative number to the max representation there is 2^32. Complexity: O(logn)
