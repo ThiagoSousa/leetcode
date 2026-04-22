@@ -3,8 +3,6 @@ class Solution:
         hex_map = {10: "a", 11:"b", 12:"c", 13:"d", 14:"e", 15:"f"}
         if num == 0:
             return "0"
-        if num == 1:
-            return "1"
         if num<0:
             num += 4294967296
 
