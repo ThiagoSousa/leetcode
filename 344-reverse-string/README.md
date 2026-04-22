@@ -17,3 +17,9 @@
 	<li><code>1 &lt;= s.length &lt;= 10<sup>5</sup></code></li>
 	<li><code>s[i]</code> is a <a href="https://en.wikipedia.org/wiki/ASCII#Printable_characters" target="_blank">printable ascii character</a>.</li>
 </ul>
+
+<hr>
+
+Solution:
+
+I reverse the string in place by swapping the first element with the nth, the second with the n-1th and so on until the middle. Complexity: O(n)
