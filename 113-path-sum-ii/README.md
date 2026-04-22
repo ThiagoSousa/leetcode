@@ -35,3 +35,9 @@
 	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
 	<li><code>-1000 &lt;= targetSum &lt;= 1000</code></li>
 </ul>
+
+<hr>
+
+Solution:
+
+Recursively pass through the tree, checking left and right and always passing the path of numbers. If I reach a leaf node, check the sum of the path's values. If it is the target, then append to the resulting list. Complexity: O(n)
