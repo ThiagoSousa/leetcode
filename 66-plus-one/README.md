@@ -41,3 +41,7 @@ Thus, the result should be [1,0].
 	<li><code>0 &lt;= digits[i] &lt;= 9</code></li>
 	<li><code>digits</code> does not contain any leading <code>0</code>&#39;s.</li>
 </ul>
+
+<hr>
+
+Normal Big Integer sum of digits with rest. Complexity: O(n)
