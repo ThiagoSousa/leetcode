@@ -24,3 +24,8 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 10<sup>4</sup></code></li>
 </ul>
+
+<hr>
+Solution:
+
+Simply iterate through 1-n and check if numbers are divisible by 3 and 5. Complexity: O(n)
