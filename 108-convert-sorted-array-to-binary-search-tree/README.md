@@ -26,3 +26,9 @@
 	<li><code>-10<sup>4</sup> &lt;= nums[i] &lt;= 10<sup>4</sup></code></li>
 	<li><code>nums</code> is sorted in a <strong>strictly increasing</strong> order.</li>
 </ul>
+
+<hr>
+<p><strong>Solution:</strong></p>
+
+Calls the same function recursively, spliting the array in half until the length is one. Then we create a TreeNode and return it. Each return of left and right are merged into a parent TreeNode until the root. Complexity: O(n)
+
