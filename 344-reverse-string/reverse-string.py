@@ -5,5 +5,6 @@ class Solution:
             s[i] = s[len(s)-i-1]
             s[len(s)-i-1] = aux
         print(s)
+
+
         
-            
