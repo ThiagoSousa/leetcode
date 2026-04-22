@@ -37,3 +37,9 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Your algorithm&#39;s time complexity must be better than <code>O(n log n)</code>, where n is the array&#39;s size.</p>
+
+<hr>
+<p><strong>Solution:</strong></p>
+
+I first create a map with the top k most frequent numbers, then sort the key-value of the map as a tuple by frequency decreasingly. Then I just iterate and return the k first items. Complexity: map creation O(n), sorting(nlogn) -> O(nlogn)
+
