@@ -44,3 +44,7 @@ The third distinct maximum is 1.
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Can you find an <code>O(n)</code> solution?
+
+<hr>
+
+Create a set of the nums, sort the set and return the third maximum. Complexity(nlogn).
