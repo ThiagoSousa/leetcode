@@ -33,3 +33,11 @@
 	<li><code>1 &lt;= m, n &lt;= 100</code></li>
 	<li><code>-10<sup>4</sup> &lt;= matrix[i][j], target &lt;= 10<sup>4</sup></code></li>
 </ul>
+<hr>
+
+Solution:
+
+Treats the entire matrix as a list and perform a binary search. I keep a left and right pointers starting at 0 and m*n-1, respectively. And I calculate the position in the matrix as:
+x = middle/n
+y = middle%n
+Then the complexity is O(log(m*n))
