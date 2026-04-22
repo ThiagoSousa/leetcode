@@ -89,3 +89,9 @@
 	<li><code>path</code> consists of English letters, digits, period <code>&#39;.&#39;</code>, slash <code>&#39;/&#39;</code> or <code>&#39;_&#39;</code>.</li>
 	<li><code>path</code> is a valid absolute Unix path.</li>
 </ul>
+
+<hr>
+
+Solution:
+
+I use regex to remove multiples /, then split by / and iterate building a new list. If I see .., I pop the last of the new list. If I see ., ignore it. Then just join the list by "/". Complexity: O(n)
