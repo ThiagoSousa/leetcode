@@ -44,3 +44,8 @@ The third distinct maximum is 1.
 
 <p>&nbsp;</p>
 <strong>Follow up:</strong> Can you find an <code>O(n)</code> solution?
+
+<hr>
+
+Solution 1: I create a set of the numbers, sort decreasignly and return the third biggest. If it is not existing return the first of the sorted list. Complexity: (nlogn)
+Solution 2: I create a set of the numbers, then find the largest three times, and return in the third time. If there is no number, the return the last found. Complexity: O(3*n) -> O(n)
