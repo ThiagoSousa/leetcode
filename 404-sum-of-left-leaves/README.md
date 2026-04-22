@@ -25,3 +25,9 @@
 	<li>The number of nodes in the tree is in the range <code>[1, 1000]</code>.</li>
 	<li><code>-1000 &lt;= Node.val &lt;= 1000</code></li>
 </ul>
+
+<hr>
+
+Solution:
+
+Depth First Search on the tree, if I find any node to the left that is a leaf node (with no children), then I sum and return it to the recursion. Complexity: O(n)
