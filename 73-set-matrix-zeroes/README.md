@@ -35,3 +35,7 @@
 	<li>A simple improvement uses <code>O(m + n)</code> space, but still not the best solution.</li>
 	<li>Could you devise a constant space solution?</li>
 </ul>
+
+<hr>
+
+Iterate the matrix first and find the lines and columns where zeros occur. Then iterate through the lines and columns and set them all to zero. Thus, it is three passes through the matrix resulting in O(m*n)
