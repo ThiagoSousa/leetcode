@@ -23,3 +23,13 @@
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 	<li><code>0 &lt;= k &lt;= 2 * 10<sup>9</sup></code></li>
 </ul>
+
+<hr>
+
+<p><strong>Solution:</strong></p>
+
+First get the length of the linked list, by iterating and counting the number of items. Complexity: O(n)
+Then, calculate the position where the new rotated list should start by getting the rest of division of k by length and subtract from the length. Complexity: O(n).
+Finally, iterate the list again, until we find the position. Then assign the last node to the head, the current node as the head and the next from previous as None. Complexity: O(n)
+
+Final complexity: O(n+1+n) -> O(2n) -> O(n)
