@@ -19,3 +19,9 @@
 	<li><code>-10 &lt;= nums[i] &lt;= 10</code></li>
 	<li>All the integers of <code>nums</code> are <strong>unique</strong>.</li>
 </ul>
+
+<hr>
+
+Solution:
+
+Recursively function which adds missing numbers to the a permutation. It keeps two arguments: 1- partial, which contains the numbers added to the permutations up to the current moment. 2- missing: numbers not yet added. Complexity: O(n!) as it goes through each permutation. 
