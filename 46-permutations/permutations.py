@@ -7,8 +7,6 @@ class Solution:
 
         def dfs(partial, missing):
 
-            print(partial, missing)
-
             if len(missing) == 0:
                 permutations.append(partial)
                 return
