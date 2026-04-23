@@ -26,3 +26,9 @@
 	<li><code>s</code> consists of lowercase and uppercase English letters, digits, or one of the following characters <code>&quot;!@#$%^&amp;*()_+-=&#39;,.:&quot;</code>.</li>
 	<li>The only space character in <code>s</code> is <code>&#39; &#39;</code>.</li>
 </ul>
+
+<hr>
+
+Solution:
+
+Split the string by empty space and check the number of results. Complexity: O(n)
