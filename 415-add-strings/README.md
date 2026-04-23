@@ -32,3 +32,8 @@
 	<li><code>num1</code> and <code>num2</code> consist of only digits.</li>
 	<li><code>num1</code> and <code>num2</code> don&#39;t have any leading zeros except for the zero itself.</li>
 </ul>
+
+<hr>
+Solution:
+
+Iterate through the digits from right to left and sum the digits plus a remainder. Save the mod by 10 in the response and the remainder gets the division by 10. Complexity: O(n)
