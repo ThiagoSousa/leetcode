@@ -25,3 +25,18 @@
 <ul>
 	<li><code>1 &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
+
+<hr>
+
+Two Solutions:
+
+The iterative solution increments the stairs and subtract n until we have less than the level. Complexity: O(n)
+
+The mathematical solution uses the formula for sequence sum: 
+(x*(x+1))/2 <= n
+x**2 + x <= 2n
+x**2 + x -2n <=0
+delta = 1-4*1*-2n = 1+8n
+x = (-1 + sqrt(1+8n))/2*1 = (-1 + sqrt(1+8n))/2
+We need to use floor function as the last row may be incomplete. 
+Complexity: O(1)
