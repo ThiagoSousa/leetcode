@@ -37,3 +37,9 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong> Could you use search pruning to make your solution faster with a larger <code>board</code>?</p>
+
+<hr>
+
+Solution:
+
+Recursively call a depth first search for each position of the board, passing the current i,j position in the board and the word remaining to be checked. The function compares the first position in the remaining word with the current position in the board. If it is different, just return because we don't need to check furhter. If it is equal, then recursively call for each of the possible adjascent positioons in the board. The search ends if the reamining letter is empty, then we found the word. Otherwise if we iterate through every position of the board and didn't find the word, then return False.
