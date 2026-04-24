@@ -31,3 +31,9 @@ Note that combinations are unordered, i.e., [1,2] and [2,1] are considered to be
 <hr>
 
 Recursively call a depth first search function passing the results so far. The recusive function appends a number from the ones not added yet and calls itself. The stop condition is if the length of the partial result is equal to k. Complexity: O(n/k) combinations and the algorithm runs k times (n/k*k)
+
+<hr>
+
+Solution:
+
+Run a Dpeth first search, passing a partial solution. Each solution is added to the list of subsets, then I iterate through numbers bigger than the biggest number in the partial and recursively call. Complexity: O(n2^n)
