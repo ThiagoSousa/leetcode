@@ -27,3 +27,7 @@ Note that combinations are unordered, i.e., [1,2] and [2,1] are considered to be
 	<li><code>1 &lt;= n &lt;= 20</code></li>
 	<li><code>1 &lt;= k &lt;= n</code></li>
 </ul>
+
+<hr>
+
+Recursively call a depth first search function passing the results so far. The recusive function appends a number from the ones not added yet and calls itself. The stop condition is if the length of the partial result is equal to k. Complexity: O(n/k) combinations and the algorithm runs k times (n/k*k)
