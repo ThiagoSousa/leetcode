@@ -30,3 +30,9 @@
 
 <p>&nbsp;</p>
 <p><strong>Follow up:</strong>&nbsp;Could you come up with a one-pass algorithm using only&nbsp;constant extra space?</p>
+
+<hr>
+
+Solution:
+
+I keep a pointer to the position to swap items. Then, I iterate through the vector three times, one for each of the colors and swap the item with the one in the pointer. Complexity: O(3*n) -> O(n)
